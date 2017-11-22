@@ -38,14 +38,40 @@
 		"subpatcher_template" : "userdefault",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-11",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 35.0, 44.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "bang", "" ],
+					"patching_rect" : [ 35.0, 105.0, 496.75, 23.0 ],
+					"style" : "",
+					"text" : "sel dump open clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Helvetica Neue Bold",
 					"fontsize" : 14.0,
 					"id" : "obj-1",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 26.0, 18.0, 73.0, 40.0 ],
+					"patching_rect" : [ 26.0, 8.0, 99.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 2.0, 77.0, 23.0 ],
 					"style" : "",
@@ -59,10 +85,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 6,
 					"numoutlets" : 1,
-					"outlettype" : [ "list" ],
-					"patching_rect" : [ 97.0, 324.5, 337.25, 23.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 97.0, 444.5, 337.75, 23.0 ],
 					"style" : "",
-					"text" : "funnel 6"
+					"text" : "index measureinfo cents durations velocities ties extras"
 				}
 
 			}
@@ -75,7 +101,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 353.5, 40.0, 90.0, 20.0 ],
+					"patching_rect" : [ 353.5, 160.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 255.666656, 30.0, 90.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
@@ -103,7 +129,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 225.0, 40.0, 90.0, 20.0 ],
+					"patching_rect" : [ 194.25, 160.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.333328, 30.0, 90.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
@@ -131,7 +157,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 587.625, 214.833328, 36.0, 23.0 ],
+					"patching_rect" : [ 587.625, 334.833313, 36.0, 23.0 ],
 					"style" : "",
 					"text" : "1"
 				}
@@ -146,7 +172,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 587.625, 190.833328, 65.0, 23.0 ],
+					"patching_rect" : [ 587.625, 310.833313, 65.0, 23.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -156,14 +182,14 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"id" : "obj-60",
-					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "IAC Driver IAC Bus 3", ",", "IAC Driver IAC Bus 4", ",", "IAC Driver IAC Bus 5", ",", "IAC Driver IAC Bus 6", ",", "IAC Driver IAC Bus 7", ",", "IAC Driver IAC Bus 8", ",", "from Max 1", ",", "from Max 2", ",", "SimpleSynth virtual input" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "IAC Driver IAC Bus 3", ",", "IAC Driver IAC Bus 4", ",", "IAC Driver IAC Bus 5", ",", "IAC Driver IAC Bus 6", ",", "IAC Driver IAC Bus 7", ",", "IAC Driver IAC Bus 8", ",", "from Max 1", ",", "from Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 587.625, 261.833313, 147.0, 23.0 ],
+					"patching_rect" : [ 587.625, 381.833313, 147.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 382.0, 30.0, 147.0, 23.0 ],
 					"style" : ""
@@ -179,7 +205,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 587.625, 236.833328, 56.0, 23.0 ],
+					"patching_rect" : [ 587.625, 356.833313, 56.0, 23.0 ],
 					"style" : "",
 					"text" : "midiinfo"
 				}
@@ -192,7 +218,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 72.5, 33.0, 23.0 ],
+					"patching_rect" : [ 194.25, 192.5, 33.0, 23.0 ],
 					"style" : "",
 					"text" : "read"
 				}
@@ -205,7 +231,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 478.625, 298.5, 192.0, 23.0 ],
+					"patching_rect" : [ 478.625, 418.5, 192.0, 23.0 ],
 					"style" : "",
 					"text" : "bach.ezmidiplay"
 				}
@@ -220,7 +246,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 35.0, 40.0, 90.0, 20.0 ],
+					"patching_rect" : [ 35.0, 160.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 30.0, 90.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
@@ -246,7 +272,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 113.5, 31.0, 23.0 ],
+					"patching_rect" : [ 35.0, 233.5, 31.0, 23.0 ],
 					"style" : "",
 					"text" : "thru"
 				}
@@ -259,7 +285,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 353.5, 72.5, 35.0, 23.0 ],
+					"patching_rect" : [ 353.5, 192.5, 35.0, 23.0 ],
 					"style" : "",
 					"text" : "clear"
 				}
@@ -272,7 +298,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 72.5, 41.0, 23.0 ],
+					"patching_rect" : [ 35.0, 192.5, 41.0, 23.0 ],
 					"style" : "",
 					"text" : "dump"
 				}
@@ -292,7 +318,7 @@
 					"numvoices" : 1,
 					"out" : "nnnnnnnn",
 					"outlettype" : [ "", "", "", "", "", "", "", "", "bang" ],
-					"patching_rect" : [ 35.0, 156.5, 526.0, 128.333328 ],
+					"patching_rect" : [ 35.0, 276.5, 526.0, 128.333328 ],
 					"pitcheditrange" : [ "null" ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 55.5, 526.0, 128.333328 ],
@@ -310,17 +336,24 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 97.0, 407.5, 30.0, 30.0 ],
+					"patching_rect" : [ 97.0, 497.5, 30.0, 30.0 ],
 					"style" : ""
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
 					"source" : [ "obj-18", 0 ]
@@ -448,12 +481,164 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-8", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
+		"parameters" : 		{
+			"obj-6" : [ "live.text[6]", "live.text", 0 ],
+			"obj-2" : [ "live.text[9]", "live.text", 0 ],
+			"obj-23" : [ "live.text[8]", "live.text", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.ezmidiplay.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.unpacknote.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.filternull.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.filter.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.gcd.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.mcapprox.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "index.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/Max-Library",
+				"patcherrelativepath" : "../Max-Library",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.score.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.nth.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.pick.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.iter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.flat.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.keys.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.is.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.reg.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.length.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.portal.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.geq.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.args.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.eq.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.neq.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.expr.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.print.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"bgfillcolor_type" : "gradient",
 		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
