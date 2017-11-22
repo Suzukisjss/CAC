@@ -52,14 +52,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 81.571426, 462.5, 236.857178, 37.0 ],
+					"patching_rect" : [ 81.571426, 462.5, 303.0, 23.0 ],
 					"style" : "",
-					"text" : "index measureinfo cents durations velocities ties extras"
+					"text" : "index 6 measureinfo cents durations velocities ties extras"
 				}
 
 			}
