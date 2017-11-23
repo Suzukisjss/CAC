@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 78.0, 717.0, 788.0 ],
+		"rect" : [ 40.0, 78.0, 1019.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,15 +43,108 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-4",
+					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "template.maxpat",
+					"name" : "exportxml.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 52.0, 523.0, 532.0, 212.0 ],
+					"patching_rect" : [ 24.0, 800.0, 557.0, 194.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 675.0, 1254.0, 74.0, 23.0 ],
+					"style" : "",
+					"text" : "s mididevice"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"allowdrag" : 0,
+					"id" : "obj-60",
+					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "IAC Driver IAC Bus 3", ",", "IAC Driver IAC Bus 4", ",", "IAC Driver IAC Bus 5", ",", "IAC Driver IAC Bus 6", ",", "IAC Driver IAC Bus 7", ",", "IAC Driver IAC Bus 8", ",", "from Max 1", ",", "from Max 2" ],
+					"labelclick" : 1,
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 611.0, 1223.0, 147.0, 23.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 611.0, 1173.0, 36.0, 23.0 ],
+					"style" : "",
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-77",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 611.0, 1149.0, 65.0, 23.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-61",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 611.0, 1195.0, 56.0, 23.0 ],
+					"style" : "",
+					"text" : "midiinfo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-4",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "2s.transpose.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "dictionary" ],
+					"patching_rect" : [ 24.0, 326.0, 532.0, 212.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -67,11 +160,11 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "template.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 52.0, 270.0, 532.0, 212.0 ],
+					"patching_rect" : [ 24.0, 558.0, 532.0, 212.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -91,7 +184,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 52.0, 33.0, 532.0, 207.0 ],
+					"patching_rect" : [ 24.0, 41.0, 532.0, 207.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -99,24 +192,58 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-61", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-60", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-77", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-2" : [ "live.text[9]", "live.text", 0 ],
-			"obj-4::obj-2::obj-3" : [ "live.text[1]", "live.text", 0 ],
-			"obj-3::obj-2::obj-3" : [ "live.text[4]", "live.text", 0 ],
 			"obj-1::obj-23" : [ "live.text[8]", "live.text", 0 ],
+			"obj-1::obj-2" : [ "live.text[9]", "live.text", 0 ],
+			"obj-2::obj-23" : [ "live.text[1]", "live.text", 0 ],
 			"obj-1::obj-12" : [ "live.text[6]", "live.text", 0 ]
 		}
 ,
@@ -150,15 +277,8 @@
 			}
 , 			{
 				"name" : "index.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/szk2s-max-library/patchers",
-				"patcherrelativepath" : "../../szk2s-max-library/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bach.mididevice.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/SoundLibrary/Github/2s-max-library/patchers",
+				"patcherrelativepath" : "../../2s-max-library/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -205,6 +325,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "dict_to_llll.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "decode_from_dict.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "thru.maxpat",
 				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",
@@ -218,21 +352,28 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "template_header.maxpat",
+				"name" : "default_processor.maxpat",
 				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "dict_to_llll.maxpat",
+				"name" : "2s.transpose.maxpat",
 				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "decode_from_dict.maxpat",
+				"name" : "bach.+.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "exportxml.maxpat",
 				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",

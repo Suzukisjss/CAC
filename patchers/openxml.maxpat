@@ -42,10 +42,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 35.0, 103.0, 496.75, 23.0 ],
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 35.0, 107.0, 496.75, 23.0 ],
 					"style" : "",
-					"text" : "sel dump open clear"
+					"text" : "route dump open clear"
 				}
 
 			}
@@ -210,11 +210,11 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "template_footer.maxpat",
-					"numinlets" : 7,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 35.0, 267.0, 530.0, 158.0 ],
+					"patching_rect" : [ 35.0, 267.0, 599.0, 158.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 48.0, 530.0, 158.0 ],
 					"viewvisibility" : 1
