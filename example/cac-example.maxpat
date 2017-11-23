@@ -50,9 +50,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 65.0, 528.0, 545.0, 204.0 ],
-					"presentation_rect" : [ 67.0, 528.0, 0.0, 0.0 ],
+					"outlettype" : [ "dictionary" ],
+					"patching_rect" : [ 52.0, 523.0, 532.0, 212.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -71,8 +70,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 61.0, 300.0, 545.0, 204.0 ],
+					"outlettype" : [ "dictionary" ],
+					"patching_rect" : [ 52.0, 270.0, 532.0, 212.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -88,11 +87,11 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "openxml.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 56.0, 55.0, 563.0, 207.0 ],
+					"outlettype" : [ "dictionary" ],
+					"patching_rect" : [ 52.0, 33.0, 532.0, 207.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -114,19 +113,94 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-3::obj-31" : [ "live.text[3]", "live.text", 0 ],
-			"obj-1::obj-6" : [ "live.text[6]", "live.text", 0 ],
-			"obj-4::obj-3" : [ "live.text[10]", "live.text", 0 ],
 			"obj-1::obj-2" : [ "live.text[9]", "live.text", 0 ],
-			"obj-3::obj-3" : [ "live.text[4]", "live.text", 0 ],
-			"obj-4::obj-31" : [ "live.text[7]", "live.text", 0 ],
-			"obj-1::obj-23" : [ "live.text[8]", "live.text", 0 ]
+			"obj-4::obj-2::obj-3" : [ "live.text[1]", "live.text", 0 ],
+			"obj-3::obj-2::obj-3" : [ "live.text[4]", "live.text", 0 ],
+			"obj-1::obj-23" : [ "live.text[8]", "live.text", 0 ],
+			"obj-1::obj-12" : [ "live.text[6]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "openxml.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/CAC",
-				"patcherrelativepath" : "../../SoundLibrary/Github/CAC",
+				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "template_footer.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "llll_to_dict.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "encode_to_dict.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "index.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/szk2s-max-library/patchers",
+				"patcherrelativepath" : "../../szk2s-max-library/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.mididevice.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.ezmidiplay.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.unpacknote.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.filternull.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.filter.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.gcd.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.mcapprox.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/bach/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -137,77 +211,39 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "bach.ezmidiplay.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
-				"patcherrelativepath" : "../../Documents/Max 7/Packages/bach/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bach.unpacknote.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
-				"patcherrelativepath" : "../../Documents/Max 7/Packages/bach/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bach.filternull.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
-				"patcherrelativepath" : "../../Documents/Max 7/Packages/bach/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bach.filter.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
-				"patcherrelativepath" : "../../Documents/Max 7/Packages/bach/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bach.gcd.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
-				"patcherrelativepath" : "../../Documents/Max 7/Packages/bach/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bach.mcapprox.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/bach/patchers",
-				"patcherrelativepath" : "../../Documents/Max 7/Packages/bach/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "index.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/Max-Library",
-				"patcherrelativepath" : "../../SoundLibrary/Github/Max-Library",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "template.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/CAC/Utility",
-				"patcherrelativepath" : "../../SoundLibrary/Github/CAC/Utility",
+				"bootpath" : "~/SoundLibrary/Github/cac/template",
+				"patcherrelativepath" : "../template",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "template.js",
-				"bootpath" : "~/SoundLibrary/Github/CAC/Utility",
-				"patcherrelativepath" : "../../SoundLibrary/Github/CAC/Utility",
-				"type" : "TEXT",
+				"name" : "template_header.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "score_to_js.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/CAC/Utility",
-				"patcherrelativepath" : "../../SoundLibrary/Github/CAC/Utility",
+				"name" : "dict_to_llll.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "decode_from_dict.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bach.score.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.encode.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -272,6 +308,10 @@
 			}
 , 			{
 				"name" : "bach.print.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "bach.decode.mxo",
 				"type" : "iLaX"
 			}
  ],
