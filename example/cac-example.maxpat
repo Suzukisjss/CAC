@@ -38,6 +38,57 @@
 		"subpatcher_template" : "userdefault",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 610.0, 294.0, 38.0, 23.0 ],
+					"style" : "",
+					"text" : "* 100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 610.0, 178.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 610.0, 256.0, 29.5, 23.0 ],
+					"style" : "",
+					"text" : "- 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 610.0, 216.0, 59.0, 23.0 ],
+					"style" : "",
+					"text" : "ss.urn 20"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -51,7 +102,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 24.0, 800.0, 557.0, 194.0 ],
+					"patching_rect" : [ 24.0, 705.0, 557.0, 194.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -144,7 +195,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 24.0, 326.0, 532.0, 212.0 ],
+					"patching_rect" : [ 24.0, 244.0, 532.0, 162.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -164,7 +215,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 24.0, 558.0, 532.0, 212.0 ],
+					"patching_rect" : [ 24.0, 475.0, 532.0, 212.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -184,7 +235,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 24.0, 41.0, 532.0, 207.0 ],
+					"patching_rect" : [ 24.0, 18.0, 532.0, 207.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -220,6 +271,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-60", 1 ]
 				}
@@ -239,12 +304,26 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 1 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-12" : [ "live.text[6]", "live.text", 0 ],
 			"obj-1::obj-23" : [ "live.text[8]", "live.text", 0 ],
 			"obj-1::obj-2" : [ "live.text[9]", "live.text", 0 ],
-			"obj-2::obj-23" : [ "live.text[1]", "live.text", 0 ],
-			"obj-1::obj-12" : [ "live.text[6]", "live.text", 0 ]
+			"obj-2::obj-23" : [ "live.text[1]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -352,9 +431,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "default_processor.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
-				"patcherrelativepath" : "../patchers",
+				"name" : "processor_template.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/cac/template",
+				"patcherrelativepath" : "../template",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -376,6 +455,13 @@
 				"name" : "exportxml.maxpat",
 				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ss.urn.maxpat",
+				"bootpath" : "~/SoundLibrary/Github/2s-max-library/patchers",
+				"patcherrelativepath" : "../../2s-max-library/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

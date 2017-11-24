@@ -150,7 +150,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "dictionary" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 159.274994, 13.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -174,6 +174,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"midpoints" : [ 264.774994, 129.0, 144.0, 129.0, 144.0, 267.0, 168.774994, 267.0 ],
+					"source" : [ "obj-16", 1 ]
 				}
 
 			}
