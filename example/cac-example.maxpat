@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -81,9 +81,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 610.0, 216.0, 59.0, 23.0 ],
+					"patching_rect" : [ 610.0, 216.0, 60.0, 23.0 ],
 					"style" : "",
-					"text" : "ss.urn 20"
+					"text" : "2s.urn 20"
 				}
 
 			}
@@ -322,41 +322,41 @@
 		"parameters" : 		{
 			"obj-1::obj-12" : [ "live.text[6]", "live.text", 0 ],
 			"obj-1::obj-23" : [ "live.text[8]", "live.text", 0 ],
-			"obj-1::obj-2" : [ "live.text[9]", "live.text", 0 ],
-			"obj-2::obj-23" : [ "live.text[1]", "live.text", 0 ]
+			"obj-2::obj-23" : [ "live.text[1]", "live.text", 0 ],
+			"obj-1::obj-2" : [ "live.text[9]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "openxml.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"bootpath" : "~/Google Drive/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "template_footer.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"name" : "default_footer.maxpat",
+				"bootpath" : "~/Google Drive/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "llll_to_dict.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"bootpath" : "~/Google Drive/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "encode_to_dict.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"bootpath" : "~/Google Drive/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "index.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/2s-max-library/patchers",
+				"bootpath" : "~/Google Drive/Github/2s-max-library/patchers",
 				"patcherrelativepath" : "../../2s-max-library/patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -405,14 +405,14 @@
 			}
 , 			{
 				"name" : "dict_to_llll.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"bootpath" : "~/Google Drive/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "decode_from_dict.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"bootpath" : "~/Google Drive/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -425,21 +425,21 @@
 			}
 , 			{
 				"name" : "template.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/template",
+				"bootpath" : "~/Google Drive/Github/cac/template",
 				"patcherrelativepath" : "../template",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "processor_template.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/template",
+				"bootpath" : "~/Google Drive/Github/cac/template",
 				"patcherrelativepath" : "../template",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "2s.transpose.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"bootpath" : "~/Google Drive/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -453,14 +453,14 @@
 			}
 , 			{
 				"name" : "exportxml.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/cac/patchers",
+				"bootpath" : "~/Google Drive/Github/cac/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ss.urn.maxpat",
-				"bootpath" : "~/SoundLibrary/Github/2s-max-library/patchers",
+				"name" : "2s.urn.maxpat",
+				"bootpath" : "~/Google Drive/Github/2s-max-library/patchers",
 				"patcherrelativepath" : "../../2s-max-library/patchers",
 				"type" : "JSON",
 				"implicit" : 1

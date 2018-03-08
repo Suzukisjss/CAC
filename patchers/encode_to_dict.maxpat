@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 106.0, 129.0, 591.0, 411.0 ],
+		"rect" : [ 34.0, 129.0, 663.0, 411.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,9 +43,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 102.0, 193.0, 109.0, 23.0 ],
+					"patching_rect" : [ 102.0, 193.0, 54.0, 23.0 ],
 					"style" : "",
-					"text" : "index"
+					"text" : "2s.index"
 				}
 
 			}
@@ -95,7 +95,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 17.0, 303.0, 78.5, 23.0 ],
+					"patching_rect" : [ 17.0, 303.0, 94.5, 23.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0
@@ -151,7 +151,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-34", 1 ],
-					"midpoints" : [ 69.0, 130.5, 201.5, 130.5 ],
+					"midpoints" : [ 69.0, 130.5, 146.5, 130.5 ],
 					"source" : [ "obj-20", 1 ]
 				}
 
