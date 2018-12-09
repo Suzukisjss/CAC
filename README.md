@@ -1,4 +1,4 @@
-# CAC Library  (Deprecated : you can use Neuron for this purpose)
+# CAC Library  (Deprecated : you can use spectrum2mpe for this purpose)
 My Max Patchers and for CAC.  
 CAC is abbriviation for Computer-Aided-Composition.  
 Some patchers need "Bach" Library.  
